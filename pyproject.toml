@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "python2proto"
+version = "0.1.0"
+description = "Convert Python models (Pydantic, dataclasses, attrs) to Protocol Buffers"
+authors = ["ProtoPynon <protopynon@proton.me>"]
+readme = "README.md"
+homepage = "https://github.com/ProtoPynon/python2proto"
+license = "MIT"
+keywords = ["protobuf", "pydantic", "dataclasses", "attrs", "proto"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License", 
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.10.2"
+attrs = "^24.2.0"
+inspect-mate-pp = "^0.0.4"
+
+[tool.poetry.urls]
+Documentation = "https://github.com/ProtoPynon/python2proto#readme"
+Source = "https://github.com/ProtoPynon/python2proto"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
